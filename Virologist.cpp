@@ -23,7 +23,7 @@ namespace pandemic
             auto card = owned_cards.find(city);
             if (card == owned_cards.end())
             {
-                throw invalid_argument("You Don't have the required card!");
+                throw invalid_argument("You Don't have the required card");
             }
             owned_cards.erase(card);
         }

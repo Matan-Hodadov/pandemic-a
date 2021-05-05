@@ -10,14 +10,9 @@ namespace pandemic
     {
         for(int i = 0; i < 48;i++)
         {
-            // City city = (City)i;
+
             this->city_diseaselvl[(City)i] = 0;
-            // this->city_station[city] = false;
         }
-        // this->city_medicine[Yellow] = false;
-        // this->city_medicine[Blue] = false;
-        // this->city_medicine[Red] = false;
-        // this->city_medicine[Black] = false;
     }
 
     int& Board::operator [] (City city)
@@ -34,7 +29,6 @@ namespace pandemic
     {
         for(int i = 0; i < 48;i++)
         {
-            // City city = (City)i;
             if (this->city_diseaselvl[(City)i] > 0)
             {
                 return false;
@@ -46,9 +40,5 @@ namespace pandemic
     void Board::remove_cures()
     {
         this->city_medicine.clear();
-        // this->city_medicine[Yellow] = false;
-        // this->city_medicine[Blue] = false;
-        // this->city_medicine[Red] = false;
-        // this->city_medicine[Black] = false;
     }
 }
